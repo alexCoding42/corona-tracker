@@ -17,8 +17,8 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
   }
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-4 gap-4">
-      <div className="flex flex-col justify-center max-w-2xl mx-auto bg-white shadow-2xl rounded-xl px-20 py-5 border-b-8 border-red-800">
+    <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
+      <div className="max-w-xs bg-white shadow-xl rounded-md px-20 py-5 border-b-8 border-red-800">
         <div className="text-center mt-5">
           <p className="text-xl sm:text-2xl font-semibold text-gray-900">
             {t("cards.infected")}
@@ -36,7 +36,7 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
         </div>
       </div>
 
-      <div className="flex flex-col justify-center max-w-xs mx-auto bg-white shadow-xl rounded-xl px-20 py-5 border-b-8 border-green-800">
+      <div className="max-w-xs bg-white shadow-xl rounded-md px-20 py-5 border-b-8 border-green-800">
         <div className="text-center mt-5">
           <p className="text-xl sm:text-2xl font-semibold text-gray-900">
             {t("cards.recovered")}
@@ -54,7 +54,7 @@ const Cards = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
         </div>
       </div>
 
-      <div className="flex flex-col justify-center max-w-xs mx-auto bg-white shadow-xl rounded-xl px-20 py-5 border-b-8 border-purple-800">
+      <div className="max-w-xs bg-white shadow-xl rounded-md px-20 py-5 border-b-8 border-purple-800">
         <div className="text-center mt-5">
           <p className="text-xl sm:text-2xl font-semibold text-gray-900">
             {t("cards.deaths")}
