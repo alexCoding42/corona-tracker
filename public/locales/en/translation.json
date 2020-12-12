@@ -1,0 +1,21 @@
+{
+  "cards": {
+    "infected": "Infected",
+    "numberOfActiveCases": "Number of active cases of COVID-19",
+    "recovered": "Recovered",
+    "numberOfRecoveries": "Number of recoveries from COVID-19",
+    "deaths": "Deaths",
+    "numberOfDeaths": "Number of deaths caused by COVID-19"
+  },
+  "countryPicker": {
+    "global": "Global"
+  },
+  "chart": {
+    "infected": "Infected",
+    "deaths": "Deaths",
+    "recovered": "Recovered",
+    "people": "People",
+    "currentState": "Current state in"
+  },
+  "date": "last update"
+}
