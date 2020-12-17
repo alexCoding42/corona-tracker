@@ -17,12 +17,12 @@ const CountryPicker = ({ handleCountryChange }) => {
   }, [setFetchedCountries]);
 
   return (
-    <div className="col-span-6 sm:col-span-3 my-5">
+    <div className="col-span-6 my-5 sm:col-span-3">
       <select
         id="country"
         name="country"
         autocomplete="country"
-        className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+        className="block mt-1 px-3 py-2 w-full bg-white border border-gray-300 focus:border-indigo-500 rounded-md focus:outline-none shadow-sm focus:ring-indigo-500 sm:text-sm"
         onChange={(e) => handleCountryChange(e.target.value)}
       >
         <option name="" value="">
