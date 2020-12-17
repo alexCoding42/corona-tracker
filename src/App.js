@@ -5,6 +5,9 @@ import { fetchData } from "./api";
 
 import Navbar from "./components/Navbar";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 function App() {
   const [data, setData] = useState({});
   const [country, setCountry] = useState("");
@@ -15,6 +18,8 @@ function App() {
     };
 
     fetchApi();
+
+    AOS.init();
   }, []);
 
   const handleCountryChange = async (country) => {
@@ -27,7 +32,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <div className="flex flex-col items-center justify-center sm:my-0 sm:mx-8">
+      <div className="flex flex-col items-center justify-center bg-gray-100">
         <Cards data={data} />
         <CountryPicker handleCountryChange={handleCountryChange} />
         <Chart data={data} country={country} />

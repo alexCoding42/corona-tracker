@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from "react";
-import { fetchDailyData } from "../../api";
+import { fetchDailyData } from "../api";
 import { Line, Bar } from "react-chartjs-2";
 import { useTranslation } from "react-i18next";
-
-import styles from "./Chart.module.css";
 
 const Chart = ({ data: { confirmed, deaths, recovered }, country }) => {
   const [dailyData, setDailyData] = useState({});
@@ -72,7 +70,9 @@ const Chart = ({ data: { confirmed, deaths, recovered }, country }) => {
   ) : null;
 
   return (
-    <div className={styles.container}>{country ? barChart : lineChart}</div>
+    <div className="flex justify-center w-full sm:w-10/12">
+      {country ? barChart : lineChart}
+    </div>
   );
 };
 

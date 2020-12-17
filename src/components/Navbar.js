@@ -5,7 +5,7 @@ import moment from "moment";
 import { useTranslation } from "react-i18next";
 
 // Images
-import logo from "../assets/images/image.png";
+import logo from "../assets/images/logo.png";
 import frenchFlag from "../assets/images/french_flag.png";
 import englishFlag from "../assets/images/english_flag.png";
 
@@ -18,25 +18,25 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-gray-800 p-3">
-      <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
-        <div className="flex-shrink-0 flex items-center px-2">
-          <img className="h-8 w-auto" src={logo} alt="Logo" />
+    <nav className="p-3 bg-black">
+      <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+        <div className="flex flex-shrink-0 items-center px-2">
+          <img className="w-auto h-8" src={logo} alt="Logo" />
         </div>
         <div className="flex ml-auto mr-5">
           <div
             className="flex items-center mx-3 cursor-pointer"
             onClick={() => handleTranslation("fr")}
           >
-            <span className="text-white mx-2">FR</span>
-            <img src={frenchFlag} alt="flag" className="h-3 w-auto" />
+            <span className="mx-2 text-white">FR</span>
+            <img src={frenchFlag} alt="flag" className="w-auto h-3" />
           </div>
           <div
             className="flex items-center mx-3 cursor-pointer"
             onClick={() => handleTranslation("en")}
           >
-            <span className="text-white mx-2">EN</span>
-            <img src={englishFlag} alt="flag" className="h-3 w-auto" />
+            <span className="mx-2 text-white">EN</span>
+            <img src={englishFlag} alt="flag" className="w-auto h-3" />
           </div>
         </div>
       </div>
